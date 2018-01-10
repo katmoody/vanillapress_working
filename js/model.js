@@ -14,7 +14,11 @@ var model = {};
   *
   * @return posts {array} An array of post objects
   */
-
+model.getLoganStore = function() {
+ 
+ return JSON.parse( localStorage.getItem( 'vanillaPress' ) );
+ 
+};
 
 /**
   * Gets content from local store
@@ -28,7 +32,11 @@ var model = {};
   *
   * @param store {string} JSON string of data to store
   */
+model.getLocalStore = function() {
 
+  return JSON.parse( localStorage.getItem( 'vanillaPress' ) );
+
+};
 
 
 /**
