@@ -56,9 +56,9 @@ view.createPostMarkup = function( post ) {
   titleLink.href = '#' + post.slug;
   titleEl.appendChild(  titleLink );
   
-  contentEl.appendChild( document.createTextNode( post.content ) );
-
   contentEl.replace(/<(?:.|\n)*?>/gm, '');
+  
+  contentEl.appendChild( document.createTextNode( post.content ) );
   
   articleEl.appendChild( titleEl );
   articleEl.appendChild( contentEl );
