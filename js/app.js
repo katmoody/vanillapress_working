@@ -15,7 +15,6 @@ var vanillaPress = {
     // Add any functions here you want
     // to run to start the application
     model.init();
-    console.log( jsonData );
 
   }
 
