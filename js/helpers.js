@@ -6,12 +6,12 @@ var helpers = {};
 
 helpers.getPageTitleEl = function() {
   
-  return.document.getElementById( 'pageTitle' );
+  return document.getElementById( 'pageTitle' );
   
 };
 
 helpers.getPageContentEl = function() {
   
-  return.document.getElementById( 'pageContent' );
+  return document.getElementById( 'pageContent' );
   
 };
