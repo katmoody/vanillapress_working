@@ -55,7 +55,10 @@ view.createPostMarkup = function( post ) {
   titleLink.appendChild( titleText );
   titleLink.href = '#' + post.slug;
   titleEl.appendChild(  titleLink );
+  
   contentEl.appendChild( document.createTextNode( post.content ) );
+  
+   var strippedString = contentEl.replace(/(<([^>]+)>)/ig,"");
   
   articleEl.appendChild( titleEl );
   articleEl.appendChild( contentEl );
