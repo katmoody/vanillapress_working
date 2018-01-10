@@ -50,7 +50,7 @@ view.createPostMarkup = function( post ) {
       titleEl = document.createElement( 'h3' ),
       titleLink = document.createElement( 'a' ),
       titleText = document.createTextNode( post.title ),
-      contentEl - document.createElement( 'div' );
+      contentEl = document.createElement( 'div' );
   
   titleLink.appendChild( titleText );
   titleLink.href = '#' + post.slug;
