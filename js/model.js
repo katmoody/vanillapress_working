@@ -10,9 +10,10 @@
 var model = {};
 
 model.init = function() {
- 
- model.updateLocalStore( jsonData );
- 
+
+  model.updateLocalStore( jsonData );
+  console.log( model.getPosts() );
+
 };
 
 /**
@@ -21,6 +22,12 @@ model.init = function() {
   * @return posts {array} An array of post objects
   */
 
+model.getPosts = function() {
+
+  var posts = model.getLocalStore();
+  return posts;
+
+};
 
 /**
   * Gets content from local store
@@ -52,3 +59,8 @@ model.updateLocalStore = function( store ) {
   *
   */
 
+model.removeLocalStorate = function() {
+
+  localStorage.removeItem( 'vanillaPress' );
+
+};
