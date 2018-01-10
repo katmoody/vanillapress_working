@@ -61,7 +61,7 @@ view.createPostMarkup = function( post ) {
   stripContentEl.appendChild( document.createTextNode( post.content ) );
   
   articleEl.appendChild( titleEl );
-  articleEl.appendChild( contentEl );
+  articleEl.appendChild( stripContentEl );
   
   return articleEl;
   
