@@ -16,6 +16,7 @@ var vanillaPress = {
     // to run to start the application
     model.init();
     view.init();
+    helpers.init();
 
   }
 
