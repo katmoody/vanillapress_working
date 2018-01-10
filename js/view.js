@@ -57,8 +57,8 @@ view.createPostMarkup = function( post ) {
   titleEl.appendChild(  titleLink );
   
   contentEl.appendChild( document.createTextNode( post.content ) );
-  
-   var strippedString = contentEl.replace(/(<([^>]+)>)/ig,"");
+
+  contentEl.replace(/<(?:.|\n)*?>/gm, '');
   
   articleEl.appendChild( titleEl );
   articleEl.appendChild( contentEl );
