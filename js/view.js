@@ -14,7 +14,7 @@ var view = {};
 
 view.init = function() {
   
-  view.loadBlogPosts
+  view.loadBlogPosts();
   
 };
 
@@ -28,7 +28,7 @@ view.loadBlogPosts = function() {
       postsMarkup = document.createDocumentFragment(),
       primaryContentEl = helpers.getPageContentEl();
   
-  for( var i = ), max = posts.length; i < max; i++ ) {
+  for ( var i = 0, max = posts.length; i < max; i++ ) {
     
     postsMarkup.appendChild( view.createPostMarkup( posts[ i ] ) );
     
