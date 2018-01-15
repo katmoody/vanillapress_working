@@ -12,7 +12,7 @@ var model = {};
 model.init = function() {
 
   model.updateLocalStore( jsonData );
-  console.log( model.getPosts() );
+  console.log( model.getLocalStore() );
 
 };
 
@@ -36,9 +36,9 @@ model.getPosts = function() {
   */
 
 model.getLocalStore = function() {
- 
+
  return JSON.parse( localStorage.getItem( 'vanillaPress' ) );
- 
+
 };
 
 /**
