@@ -10,7 +10,7 @@ var posts =
         "slug":"hello-world",
         "type":"posts",
         "title":"Hello world!",
-        "content":"Welcome to WordPress. This is your first post. Edit or delete it, then start writing! "
+        "content":"Welcome to VanillaPress. This is your first post. Edit or delete it, then start writing! "
       },
       {
         "id":2,
