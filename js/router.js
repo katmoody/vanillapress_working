@@ -28,6 +28,8 @@ router.getSlug = function() {
 
   var slug = window.location.hash;
 
+  view.clearContent();
+
   if( "" === slug ) {
 
     return null;

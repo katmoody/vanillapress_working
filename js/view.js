@@ -14,7 +14,7 @@ var view = {};
 
 view.init = function() {
 
-  
+
 
 };
 
@@ -64,3 +64,17 @@ view.createPostMarkup = function( post ) {
   return articleEl;
 
 }
+
+/**
+* Clears title and main content from page
+*/
+
+view. clearContent = function() {
+
+  var titleEl = helpers.getPageTitleEl(),
+      contentEl = helpers.getPageContentEl();
+
+  titleEl.innerHTML = '';
+  contentEl.innerHTML = '';
+
+};
