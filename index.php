@@ -50,11 +50,9 @@
   <script src="js/data.js"></script>
   <script src="js/helpers.js"></script>
   <script src="js/model.js"></script>
+  <script src="js/router.js"></script>
   <script src="js/view.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/router.js"></script>
-
 
 </body>
 </html>
