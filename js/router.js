@@ -14,6 +14,7 @@ var router = {};
 
  router.init = function() {
 
+   router.loadContent();
    router.listenPageChange();
 
  };
