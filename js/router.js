@@ -58,13 +58,15 @@ router.loadContent = function() {
 
   var slug = router.getSlug();
 
+  view.clearContent();
+
   if( null === slug ) {
 
     view.loadBlogPosts();
 
   } else {
 
-    console.log( 'Load post ' + slug );
+    view.loadBlogPost( slug );
 
   }
 
