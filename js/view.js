@@ -39,6 +39,22 @@ view.loadBlogPosts = function() {
 };
 
 /**
+* Create Markup for Single Blog Post
+* @param slug {string} post to create markup for
+*/
+
+view.loadBlogPost = function( slug ) {
+
+  var post = model.getPost( slug ),
+      titleEl = helpers.getPageTitleEl(),
+      contentEl = helpers.getPageContentEl();
+
+  titleEl.innerHTML = post.title;
+  contentEl.innerHTML = post.content;
+
+}
+
+/**
 * Create Markup for Blog Posts
 * @param object {post} Post to create markup for
 * @return object {articleEl} Final post markup
