@@ -66,7 +66,7 @@ router.loadContent = function() {
 
   } else {
 
-    view.loadBlogPost();
+    view.loadBlogPost( slug );
 
   }
 
