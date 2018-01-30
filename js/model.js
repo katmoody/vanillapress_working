@@ -12,7 +12,6 @@ var model = {};
 model.init = function() {
 
   model.updateLocalStore( jsonData );
-  console.log( model.getLocalStore() );
 
 };
 
@@ -24,7 +23,7 @@ model.init = function() {
 
 model.getPosts = function() {
 
-  var posts = model.getLocalStore();
+  var posts = JSON.parse( model.getLocalStore() );
   return posts;
 
 };
@@ -62,7 +61,9 @@ model.getPost = function( slug ) {
 
 model.getLocalStore = function() {
 
- return JSON.parse( localStorage.getItem( 'vanillaPress' ) );
+ var store = JSON.parse( localStorage.getItem( 'vanillaPress' ) );
+
+ return store;
 
 };
 
@@ -74,17 +75,16 @@ model.getLocalStore = function() {
 
 model.updateLocalStore = function( store ) {
 
-  localStorage.setItem( 'vanillaPress', store);
+  localStorage.setItem( 'vanillaPress', JSON.stringify(store) );
 
 };
-
 
 /**
   * Deletes data from local storage
   *
   */
 
-model.removeLocalStorate = function() {
+model.removeLocalStore = function() {
 
   localStorage.removeItem( 'vanillaPress' );
 
